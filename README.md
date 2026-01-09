@@ -1,34 +1,31 @@
 # DigitalPlat Domain Website
 
-This repository contains the **official website framework** for DigitalPlat Domain services.
+This repository contains the **official website** for DigitalPlat Domain services.
 
-The site is built with **Next.js**, and the visual design is adapted from the **Astro Atom theme** by Tailus UI.
-The goal of this project is to provide a clean, fast, and easily extensible foundation for DigitalPlat’s public-facing web presence.
+The site is built with **Astro** and **Tailwind CSS**, based on the **Astro Atom theme** by Tailus UI.
+ It serves as a clean, fast, and maintainable foundation for DigitalPlat’s public-facing web presence.
 
 ## Tech Stack
 
-- **Next.js** – React-based framework for production-ready websites
+- **Astro** – Modern static site framework
 - **TypeScript** – Type safety and better maintainability
 - **Tailwind CSS** – Utility-first styling
-- **Astro Atom Theme (Tailus UI)** – Design inspiration and layout reference
+- **Tailus UI (Astro Atom Theme)** – Design system and layout foundation
 
-Design reference:
+Template source:
 
-- https://github.com/withastro/astro
 - https://github.com/Tailus-UI/astro-theme
 
-This project is **not an Astro site**. The original Astro theme was manually adapted and reimplemented for Next.js.
+This project uses the Tailus UI Astro theme as its base and customizes it for DigitalPlat’s needs.
 
 ## Project Purpose
 
 This repository focuses on:
 
-- A reusable homepage layout for DigitalPlat-related services
-- Clear content structure for domains, products, and documentation
-- Minimal dependencies and long-term maintainability
-- Easy customization for future sub-projects and microsites
-
-It is intended to be used as a **base framework**, not a locked-down template.
+- A clear and lightweight homepage for DigitalPlat Domain services
+- Simple, readable structure for long-term maintenance
+- Easy customization for branding, content, and layout
+- A reusable base for future DigitalPlat web projects
 
 ## Getting Started
 
@@ -38,7 +35,7 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```
 npm run dev
@@ -48,17 +45,15 @@ Then open http://localhost:3000 in your browser.
 
 ## Contributing
 
-Contributions are welcome and appreciated.
+Contributions are welcome.
 
-If you would like to help improve this project, you are welcome to:
+You can help by:
 
-- Fix bugs or unexpected behavior
-- Improve code structure or performance
-- Correct typos, grammar issues, or documentation mistakes
-- Suggest better patterns, components, or layout ideas
+- Fixing bugs or unexpected behavior
+- Improving layout, accessibility, or performance
+- Correcting typos, grammar issues, or documentation
+- Refining components or structure
 
 ## License
 
-This project is open-sourced under the **MIT License**.
-
-You are free to use, modify, and redistribute it, as long as the license terms are respected.
+This project is licensed under the **MIT License**.
