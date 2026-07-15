@@ -1,28 +1,42 @@
 {
-  "name": "atom",
-  "description": "Modern free Tailwind CSS, Astro landing page template for startups | built with Tailus Themer",
-  "version": "0.0.2",
-  "private": false,
-  "type": "module",
+  "name": "astrolus",
+  "description": "Nextjs - Tailwind Astrolus Theme",
+  "version": "1.0.0",
+  "author": {
+    "name": "luasenvy",
+    "email": "luas.envy@gmail.com",
+    "url": "https://www.luas.kr"
+  },
+  "license": "MIT",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "node -e \"require('fs').rmSync('.next', { recursive: true, force: true }); require('fs').rmSync('out', { recursive: true, force: true })\" && next build",
+    "start": "next start",
+    "lint": "biome check",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs,cjs,json,css}": ["biome check --write"]
   },
   "dependencies": {
-    "@tailus/themer": "^0.0.5",
-    "@tailus/themer-button": "^0.0.7",
-    "@tailus/themer-card": "^0.0.1",
-    "@tailus/themer-progress": "^0.0.1",
-    "astro": "^4.5.12",
-    "astro-font": "^0.0.72",
-    "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.2",
-    "tailwindcss": "^3.4.3"
+    "next": "^16.0.10"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.1.0"
+    "@biomejs/biome": "^2.3.9",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "classnames": "^2.5.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "postcss": "^8.5.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5.9.3"
   }
 }

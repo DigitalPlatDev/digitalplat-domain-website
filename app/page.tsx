@@ -1,0 +1,17 @@
+import { Blog } from "@/components/Blog";
+import { CallToAction } from "@/components/CallToAction";
+import { Features } from "@/components/Features";
+import { HeroSection } from "@/components/HeroSection";
+import { Stats } from "@/components/Stats";
+
+export default function Home() {
+  return (
+    <main className="mb-40 space-y-40">
+      <HeroSection />
+      <Features />
+      <Stats />
+      <CallToAction />
+      <Blog />
+    </main>
+  );
+}

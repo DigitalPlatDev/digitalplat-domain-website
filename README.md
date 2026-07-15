@@ -1,59 +1,26 @@
-# DigitalPlat Domain Website
+# astrolus
 
-This repository contains the **official website** for DigitalPlat Domain services.
+A page template built with astro and tailwindcss using tailus blocks.
 
-The site is built with **Astro** and **Tailwind CSS**, based on the **Astro Atom theme** by Tailus UI.
- It serves as a clean, fast, and maintainable foundation for DigitalPlat’s public-facing web presence.
+## nextjs-astrolus
 
-## Tech Stack
+![Tailus astro based theme](./public/astrolus-light.webp)
+![Tailus astro based dark theme](./public/astrolus-dark.webp)
 
-- **Astro** – Modern static site framework
-- **TypeScript** – Type safety and better maintainability
-- **Tailwind CSS** – Utility-first styling
-- **Tailus UI (Astro Atom Theme)** – Design system and layout foundation
+[Astrolus Theme](https://github.com/Tailus-UI/astro-theme) for [Next.js](https://nextjs.org/)<sub>(15+ App Router)</sub>
 
-Template source:
+## Tested Environment
 
-- https://github.com/Tailus-UI/astro-theme
+- debian - bookworm
+- nodejs - v22.14.0
+- npm - 11.2.0
 
-This project uses the Tailus UI Astro theme as its base and customizes it for DigitalPlat’s needs.
+## npm commands
 
-## Project Purpose
-
-This repository focuses on:
-
-- A clear and lightweight homepage for DigitalPlat Domain services
-- Simple, readable structure for long-term maintenance
-- Easy customization for branding, content, and layout
-- A reusable base for future DigitalPlat web projects
-
-## Getting Started
-
-Install dependencies:
-
-```
-npm install
-```
-
-Start the development server:
-
-```
-npm run dev
-```
-
-Then open http://localhost:3000 in your browser.
-
-## Contributing
-
-Contributions are welcome.
-
-You can help by:
-
-- Fixing bugs or unexpected behavior
-- Improving layout, accessibility, or performance
-- Correcting typos, grammar issues, or documentation
-- Refining components or structure
-
-## License
-
-This project is licensed under the **MIT License**.
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | `rm -rf .next && next build`                       |
+| `npm run start`        | `next start`                                       |
+| `npm run lint`         | `next lint`                                        |
