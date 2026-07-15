@@ -1,132 +1,92 @@
-import Image from "next/image";
-
 import Container from "@/components/Container";
 
-import Pie from "@/public/images/pie.svg";
+const steps = [
+  { title: "Register your name", detail: "Choose an available public namespace", status: "01" },
+  { title: "Connect your DNS", detail: "Point to the provider you already use", status: "02" },
+  {
+    title: "Build and publish",
+    detail: "Keep full control of your application stack",
+    status: "03",
+  },
+];
 
 export async function Stats() {
   return (
-    <div id="solution">
+    <section id="solution" className="scroll-mt-24 bg-gray-950 py-24 text-white md:py-32">
       <Container>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="h-6 w-6 text-sky-500"
-        >
-          <path
-            fillRule="evenodd"
-            d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
-            clipRule="evenodd"
-          />
-          <path
-            fillRule="evenodd"
-            d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
-            clipRule="evenodd"
-          />
-        </svg>
-
-        <div className="flex-row-reverse justify-between space-y-6 text-gray-600 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
-          <div className="md:5/12 lg:w-1/2">
-            <Image src={Pie} alt="image" loading="lazy" className="w-full" />
-          </div>
-          <div className="md:7/12 space-y-6 lg:w-1/2">
-            <h2 className="font-bold text-3xl text-gray-900 md:text-4xl dark:text-white">
-              Stewardship that protects the namespace for the long term
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              DigitalPlat Domain is operated by DigitalPlat Foundation, an independent U.S.
-              501(c)(3) public charity supporting Internet Freedom, open infrastructure, digital
-              rights, and access to technology. EIN: 38-4397252. We maintain reliable
-              infrastructure, transparent policies, and humane abuse response so the namespace
-              remains stable, interoperable, and worthy of trust.
+        <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-24">
+          <div>
+            <p className="font-semibold text-indigo-300 text-sm uppercase tracking-[0.18em]">
+              How it works
             </p>
-            <div className="space-y-4 divide-y divide-gray-100 dark:divide-gray-800">
-              <div className="flex gap-4 pt-0 md:items-center">
-                <div className="flex h-12 w-12 gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="m-auto h-6 w-6 text-indigo-500 dark:text-indigo-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="w-5/6">
-                  <h3 className="font-semibold text-gray-700 text-lg dark:text-indigo-300">
-                    Open access, global reach
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Names are available worldwide with bring-your-own DNS flexibility.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4 pt-4 md:items-center">
-                <div className="flex h-12 w-12 gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="m-auto h-6 w-6 text-teal-600 dark:text-teal-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="w-5/6">
-                  <h3 className="font-semibold text-gray-700 text-lg dark:text-teal-300">
-                    Trustworthy governance
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Policies on privacy and acceptable use prioritize safety, accountability, and
-                    respect for internet freedom.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4 pt-4 md:items-center">
-                <div className="flex h-12 w-12 gap-4 rounded-full bg-sky-100 dark:bg-sky-900/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="m-auto h-6 w-6 text-sky-600 dark:text-sky-400"
-                  >
-                    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
-                    <line
-                      x1="6"
-                      y1="6"
-                      x2="18"
-                      y2="18"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
+            <h2 className="mt-5 text-balance font-semibold text-4xl tracking-[-0.035em] md:text-5xl">
+              From idea to a live name in three steps.
+            </h2>
+            <p className="mt-6 max-w-xl text-gray-400 text-lg leading-8">
+              A focused workflow gets you online without bundling hosting, DNS, or tools you do not
+              need.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-gray-300 text-sm">
+              <span className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>No hosting lock-in
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>Clear usage policies
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-indigo-400"></span>Responsive abuse
+                handling
+              </span>
+            </div>
+          </div>
 
-                <div className="w-5/6">
-                  <h3 className="font-semibold text-gray-700 text-lg dark:text-sky-300">
-                    Abuse response with care
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Our Trust & Safety Team works alongside automated abuse detection and trusted
-                    security partners to review reports, remove harmful domains, and protect
-                    legitimate expression and access.
-                  </p>
-                </div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] shadow-2xl">
+            <div className="flex items-center justify-between border-white/10 border-b px-6 py-4">
+              <div className="flex gap-1.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-white/20"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-white/20"></span>
+                <span className="h-2.5 w-2.5 rounded-full bg-white/20"></span>
               </div>
+              <span className="font-mono text-gray-500 text-xs">domain.setup</span>
+            </div>
+            <div className="p-4 sm:p-6">
+              {steps.map((step, index) => (
+                <div key={step.title} className="relative flex gap-4 pb-7 last:pb-0">
+                  {index < steps.length - 1 && (
+                    <div
+                      aria-hidden="true"
+                      className="absolute top-9 left-4 h-[calc(100%-2rem)] w-px bg-white/10"
+                    ></div>
+                  )}
+                  <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-400/10 font-mono text-indigo-300 text-xs">
+                    {step.status}
+                  </div>
+                  <div className="flex-1 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-4">
+                    <div className="flex items-center justify-between gap-4">
+                      <p className="font-medium text-white">{step.title}</p>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        className="h-4 w-4 shrink-0 text-emerald-400"
+                      >
+                        <path
+                          d="m5 10 3 3 7-7"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <p className="mt-1.5 text-gray-400 text-sm">{step.detail}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 }

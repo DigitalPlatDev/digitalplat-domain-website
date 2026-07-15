@@ -119,9 +119,8 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-12">
           <section className="space-y-4 leading-7">
             <p>
-              DigitalPlat Domain is a public-benefit domain registration platform operated by
-              DigitalPlat Foundation, Inc. This Privacy Policy explains how we collect, use,
-              disclose, retain, and protect information when you use the Service.
+              DigitalPlat Domains is operated by EdgeAlphix LLC. This Privacy Policy explains how we
+              collect, use, disclose, retain, and protect information when you use the Service.
             </p>
           </section>
 

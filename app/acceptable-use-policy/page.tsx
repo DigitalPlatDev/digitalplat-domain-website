@@ -19,7 +19,7 @@ const sections: PolicySection[] = [
     title: "1. Introduction",
     paragraphs: [
       'This Acceptable Use Policy ("AUP") is part of the DigitalPlat Domain Terms of Service. It applies to all access to and use of DigitalPlat Domain, including all Domains, Namespaces, DNS services, registration requests, account activity, APIs, redirects, websites, applications, email-related use, and other platform features.',
-      "DigitalPlat Domain is a public-benefit domain registration platform operated by DigitalPlat Foundation, Inc. The Service supports open public subdomain registration under multiple Namespaces while maintaining abuse prevention, security controls, and cooperation with trusted internet safety partners.",
+      "DigitalPlat Domains is operated by EdgeAlphix LLC. The Service supports open public subdomain registration under multiple Namespaces while maintaining abuse prevention, security controls, and cooperation with trusted internet safety partners.",
       "This AUP explains what users may not do, what users are responsible for, how DigitalPlat detects abuse, and how DigitalPlat may enforce this policy. It is intended to complement the Terms of Service, not repeat them.",
     ],
   },

@@ -1,96 +1,49 @@
-import Image from "next/image";
-
 import Container from "@/components/Container";
-
-import avatar0 from "@/public/images/avatars/avatar-0.webp";
-import avatar1 from "@/public/images/avatars/avatar-1.webp";
-import avatar2 from "@/public/images/avatars/avatar-2.webp";
-import avatar3 from "@/public/images/avatars/avatar-3.webp";
-import avatar4 from "@/public/images/avatars/avatar-4.webp";
 
 export async function CallToAction() {
   return (
-    <div className="relative py-16">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
-      >
-        <div className="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
-        <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
-      </div>
+    <section className="py-24 md:py-32">
       <Container>
-        <div className="relative">
-          <div className="flex items-center justify-center -space-x-2">
-            <Image
-              loading="lazy"
-              width="400"
-              height="400"
-              src={avatar0}
-              alt="member photo"
-              className="h-8 w-8 rounded-full object-cover"
-            />
-            <Image
-              loading="lazy"
-              width="200"
-              height="200"
-              src={avatar1}
-              alt="member photo"
-              className="h-12 w-12 rounded-full object-cover"
-            />
-            <Image
-              loading="lazy"
-              width="200"
-              height="200"
-              src={avatar2}
-              alt="member photo"
-              className="z-10 h-16 w-16 rounded-full object-cover"
-            />
-            <Image
-              loading="lazy"
-              width="200"
-              height="200"
-              src={avatar3}
-              alt="member photo"
-              className="relative h-12 w-12 rounded-full object-cover"
-            />
-            <Image
-              loading="lazy"
-              width="200"
-              height="200"
-              src={avatar4}
-              alt="member photo"
-              className="h-8 w-8 rounded-full object-cover"
-            />
-          </div>
-          <div className="m-auto mt-6 space-y-6 md:w-8/12 lg:w-7/12">
-            <h1 className="text-center font-bold text-4xl text-gray-800 md:text-5xl dark:text-white">
-              Claim your place on the open internet
-            </h1>
-            <p className="text-center text-gray-600 text-xl dark:text-gray-300">
-              Join a global community building with DigitalPlat Domain to keep the web accessible,
-              resilient, and human-centered.
-            </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              <a
-                href="https://dash.domain.digitalplat.org/"
-                className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-              >
-                <span className="relative font-semibold text-base text-white dark:text-dark">
-                  Register a domain
-                </span>
-              </a>
-              <a
-                href="/about"
-                className="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-gradient-to-b before:bg-primary/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max dark:before:border-gray-700 dark:before:bg-gray-800"
-              >
-                <span className="relative font-semibold text-base text-primary dark:text-white">
-                  Learn about our stewardship
-                </span>
-              </a>
+        <div className="relative overflow-hidden rounded-3xl bg-indigo-600 px-7 py-14 text-white shadow-2xl shadow-indigo-950/20 sm:px-12 md:py-20 lg:px-20">
+          <div
+            aria-hidden="true"
+            className="absolute -top-32 -right-20 h-80 w-80 rounded-full border-[60px] border-white/5"
+          ></div>
+          <div
+            aria-hidden="true"
+            className="absolute -bottom-40 -left-24 h-80 w-80 rounded-full border-[60px] border-white/5"
+          ></div>
+          <div className="relative flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
+            <div className="max-w-2xl">
+              <p className="font-semibold text-indigo-200 text-sm uppercase tracking-[0.18em]">
+                Start building
+              </p>
+              <h2 className="mt-5 text-balance font-semibold text-4xl tracking-[-0.035em] md:text-5xl">
+                Give your next project a name.
+              </h2>
+              <p className="mt-5 max-w-xl text-indigo-100 text-lg leading-8">
+                Create an account, choose an available namespace, and connect the infrastructure you
+                already use.
+              </p>
             </div>
+            <a
+              href="https://dash.domain.digitalplat.org/"
+              className="inline-flex h-12 w-full shrink-0 items-center justify-center rounded-lg bg-white px-6 font-semibold text-indigo-700 text-sm shadow-lg transition hover:bg-indigo-50 sm:w-auto"
+            >
+              Register a domain
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" className="ml-2 h-4 w-4">
+                <path
+                  d="M4 10h12m-5-5 5 5-5 5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 }

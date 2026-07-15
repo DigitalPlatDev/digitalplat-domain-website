@@ -21,7 +21,7 @@ const sections: TermsSection[] = [
     title: "1. Introduction",
     paragraphs: [
       'These Terms of Service ("Terms") govern your access to and use of DigitalPlat Domain, including any related websites, applications, APIs, DNS services, account tools, registration systems, abuse handling systems, payment features, documentation, and other services we provide in connection with DigitalPlat Domain.',
-      "DigitalPlat Domain is a public-benefit domain registration platform operated by DigitalPlat Foundation, Inc. Its mission is to make public namespaces more accessible while maintaining reasonable security, reliability, and abuse prevention controls. The Service primarily allows eligible users to request and manage public subdomain registrations under Namespaces operated, administered, or made available through DigitalPlat.",
+      "DigitalPlat Domains is operated by EdgeAlphix LLC. Its mission is to make public namespaces more accessible while maintaining reasonable security, reliability, and abuse prevention controls. The Service primarily allows eligible users to request and manage public subdomain registrations under Namespaces operated, administered, or made available through DigitalPlat.",
       "By accessing or using the Service, creating an account, registering or attempting to register a Domain, purchasing a Buy Slot, configuring DNS, or otherwise using DigitalPlat Domain, you agree to these Terms. These Terms apply to continued access to and use of the Service after their effective date. If you do not agree to these Terms, you must not use the Service.",
       "DigitalPlat Domain operates on a best-effort basis. Some Namespaces may be available without charge, and some features or additional registration capacity may require payment. The Service does not sell ownership of top-level domains, registries, Namespaces, or permanent domain rights. Availability of any Namespace, Domain, DNS configuration, account feature, or related service may change over time.",
       "These Terms are intended to be understandable while still describing important legal rights, responsibilities, and limitations. Please read them carefully.",
@@ -31,7 +31,7 @@ const sections: TermsSection[] = [
     title: "2. Definitions",
     paragraphs: ["For purposes of these Terms:"],
     bullets: [
-      '"Organization" means DigitalPlat Foundation, Inc., a Delaware nonprofit corporation, together with its authorized operators and representatives acting on its behalf.',
+      '"Organization" means EdgeAlphix LLC, together with its authorized operators and representatives acting on its behalf.',
       '"DigitalPlat," "we," "us," and "our" refer to the Organization operating DigitalPlat Domain.',
       '"Platform" means DigitalPlat Domain and the related systems, interfaces, websites, dashboards, APIs, databases, DNS tools, registration tools, payment tools, abuse systems, documentation, and infrastructure used to provide the Service.',
       '"Service" means the services made available through DigitalPlat Domain, including public subdomain registration, Namespace access, DNS hosting or DNS configuration features, account management, Buy Slot management, abuse handling, and related platform functions.',

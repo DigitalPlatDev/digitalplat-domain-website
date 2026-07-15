@@ -6,12 +6,12 @@ import { Stats } from "@/components/Stats";
 
 export default function Home() {
   return (
-    <main className="mb-40 space-y-40">
+    <div className="overflow-hidden">
       <HeroSection />
       <Features />
       <Stats />
       <CallToAction />
       <Blog />
-    </main>
+    </div>
   );
 }

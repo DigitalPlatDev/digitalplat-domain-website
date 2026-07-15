@@ -6,9 +6,9 @@ import { AppFooter } from "@/components/AppFooter";
 import { AppHeader } from "@/components/AppHeader";
 
 export const metadata = {
-  title: "DigitalPlat Domain",
+  title: "DigitalPlat Domains",
   description:
-    "DigitalPlat Domain is a nonprofit stewarding free, public-benefit namespaces for people and organizations everywhere.",
+    "DigitalPlat Domains is operated by EdgeAlphix LLC and provides accessible public namespaces for people and organizations worldwide.",
 };
 
 const urbanist = Urbanist({
@@ -21,7 +21,9 @@ const urbanist = Urbanist({
 export default async function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`bg-white dark:bg-gray-900 ${urbanist.className}`}>
+      <body
+        className={`bg-white text-gray-950 antialiased dark:bg-gray-950 dark:text-white ${urbanist.className}`}
+      >
         <AppHeader />
         <main className="mb-40 space-y-40">{children}</main>
         <AppFooter />
