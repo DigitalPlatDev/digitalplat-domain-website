@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "DigitalPlat Domain Privacy Policy",
 };
 
-const effectiveDate = "June 29, 2026";
+const effectiveDate = "October 17, 2026";
 
 const sections = [
   {
@@ -24,6 +24,15 @@ const sections = [
       "We use information to provide, operate, secure, maintain, and improve DigitalPlat Domain. This includes account management, domain registration, DNS operation, Buy Slot processing, support, abuse prevention, fraud detection, service notices, and compliance with applicable law.",
       "We may use technical signals and logs to detect phishing, malware, spam, botnets, impersonation, account compromise, automated abuse, and other activity prohibited by our Terms of Service and Acceptable Use Policy.",
       "We do not sell personal information.",
+    ],
+  },
+  {
+    title: "Google Sign-In and Account Linking",
+    paragraphs: [
+      "DigitalPlat Domain and the DigitalPlat One Dashboard at dashboard.digitalplat.org offer Google Sign-In. If you choose it, the Dashboard requests the openid and email permissions. Google supplies your Google account identifier, email address, and email-verification status. Google also returns authentication tokens used by the server to validate your identity and retrieve this information. We do not receive your Google password.",
+      "We use this information to identify your account, sign you in, link the Google sign-in method you select, and protect your account. These permissions do not allow the Dashboard to read your Gmail messages, Google Drive files, contacts, or calendar. They are not permission to publish content or act across your Google account.",
+      "Your linked Google identifier, email address, verification status, and related account-security records are stored with your DigitalPlat account. The retention, security, and service-provider disclosures below apply to these records. Google account information is not sold or used for advertising. DigitalPlat's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including its Limited Use requirements.",
+      "You can remove DigitalPlat's access from your Google Account's third-party connections settings. You can also unlink Google in the Dashboard's account settings after verifying your identity and keeping another usable sign-in method. Unlinking removes the stored Google sign-in association; it does not delete your DigitalPlat account or unrelated service records. To request deletion or access to retained personal information, use the account-deletion controls or contact contact@digitalplat.org. Requests are verified, and the retention exceptions described below still apply.",
     ],
   },
   {
